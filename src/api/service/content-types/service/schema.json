@@ -1,0 +1,106 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services",
+  "info": {
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "Service",
+    "description": "Garten- und Landschaftsbau Dienstleistungen"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "description": "Name der Dienstleistung (z.B. Gartenpflege)"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "kurzbeschreibung": {
+      "type": "text",
+      "required": true,
+      "maxLength": 200,
+      "description": "Kurze Beschreibung für Übersichten"
+    },
+    "beschreibung": {
+      "type": "richtext",
+      "required": true,
+      "description": "Ausführliche Dienstleistungsbeschreibung"
+    },
+    "keywords": {
+      "type": "json",
+      "required": true,
+      "description": "Array von relevanten Keywords"
+    },
+    "basis_preis": {
+      "type": "string",
+      "description": "Preisrange (z.B. 45-65€/Stunde)"
+    },
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "Trees",
+        "Scissors",
+        "Flower2",
+        "Shovel",
+        "Droplets",
+        "Sun",
+        "Snowflake",
+        "Fence",
+        "Home",
+        "Leaf"
+      ],
+      "description": "Lucide Icon Name"
+    },
+    "leistungen": {
+      "type": "json",
+      "description": "Array von Einzelleistungen"
+    },
+    "saison": {
+      "type": "enumeration",
+      "enum": [
+        "ganzjährig",
+        "frühjahr",
+        "sommer",
+        "herbst",
+        "winter",
+        "frühjahr-sommer",
+        "frühjahr-herbst",
+        "sommer-herbst"
+      ],
+      "default": "ganzjährig"
+    },
+    "prioritaet": {
+      "type": "integer",
+      "default": 0,
+      "description": "Sortierreihenfolge (höher = wichtiger)"
+    },
+    "seo_titel_template": {
+      "type": "string",
+      "description": "Template für SEO Titel: {service} {stadtteil} - Ihr Gartenprofi"
+    },
+    "seo_beschreibung_template": {
+      "type": "text",
+      "description": "Template für Meta Description"
+    },
+    "contents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::content.content",
+      "mappedBy": "service"
+    },
+    "referenzprojekte": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::referenz.referenz",
+      "inversedBy": "services"
+    }
+  }
+} 

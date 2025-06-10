@@ -1,0 +1,222 @@
+[
+  {
+    "name": "Altona-Altstadt",
+    "bezirk": "Altona",
+    "einwohner": 29023,
+    "flaeche": 2.8,
+    "besonderheiten": "Dichte Bebauung, historische Altbauten, Nähe zur Elbe",
+    "gartentypen": "Hinterhofgärten, Dachterrassen, kleine Vorgärten",
+    "lokale_herausforderungen": "Wenig Platz, viel Schatten durch hohe Gebäude, sandiger Boden",
+    "verkehrsanbindung": "Sehr gut mit S-Bahn Altona, mehrere Buslinien",
+    "koordinaten": {"lat": 53.5495, "lng": 9.9354}
+  },
+  {
+    "name": "Altona-Nord",
+    "bezirk": "Altona",
+    "einwohner": 23567,
+    "flaeche": 2.2,
+    "besonderheiten": "Mischgebiet aus Wohnen und Gewerbe, viele Neubauprojekte",
+    "gartentypen": "Balkongärten, Gemeinschaftsgärten, moderne Dachgärten",
+    "lokale_herausforderungen": "Verschattung, begrenzte Flächen, urbane Hitze",
+    "verkehrsanbindung": "S-Bahn Holstenstraße, gute Busanbindung",
+    "koordinaten": {"lat": 53.5621, "lng": 9.9523}
+  },
+  {
+    "name": "Bahrenfeld",
+    "bezirk": "Altona",
+    "einwohner": 30790,
+    "flaeche": 10.6,
+    "besonderheiten": "Volkspark, Trabrennbahn, viele Einfamilienhäuser",
+    "gartentypen": "Klassische Vorgärten, größere Privatgärten, Schrebergärten",
+    "lokale_herausforderungen": "Lehmboden, teilweise Staunässe, alte Baumbestände",
+    "verkehrsanbindung": "S-Bahn Bahrenfeld, mehrere Buslinien",
+    "koordinaten": {"lat": 53.5596, "lng": 9.9099}
+  },
+  {
+    "name": "Blankenese",
+    "bezirk": "Altona",
+    "einwohner": 13637,
+    "flaeche": 8.3,
+    "besonderheiten": "Elbhang, Treppenviertel, gehobene Wohnlage, viele Villen",
+    "gartentypen": "Große Hanggrundstücke, Terrassengärten, parkähnliche Anlagen",
+    "lokale_herausforderungen": "Extreme Hanglage, Erosion, Wind von der Elbe, Mikroklima",
+    "verkehrsanbindung": "S-Bahn Blankenese, Fähre",
+    "koordinaten": {"lat": 53.5590, "lng": 9.8111}
+  },
+  {
+    "name": "Groß Flottbek",
+    "bezirk": "Altona",
+    "einwohner": 11118,
+    "flaeche": 2.4,
+    "besonderheiten": "Botanischer Garten, gehobene Wohnlage, viele Altvillen",
+    "gartentypen": "Große Privatgärten, alte Parkgrundstücke, englische Gärten",
+    "lokale_herausforderungen": "Alter Baumbestand, Denkmalschutz, anspruchsvolle Klientel",
+    "verkehrsanbindung": "S-Bahn Klein Flottbek, gute Busanbindung",
+    "koordinaten": {"lat": 53.5651, "lng": 9.8732}
+  },
+  {
+    "name": "Iserbrook",
+    "bezirk": "Altona",
+    "einwohner": 11525,
+    "flaeche": 2.7,
+    "besonderheiten": "Ruhige Wohnlage, viele Einfamilienhäuser, ländlicher Charakter",
+    "gartentypen": "Mittelgroße Privatgärten, naturnahe Gärten, Obstgärten",
+    "lokale_herausforderungen": "Sandboden, Wildtiere (Rehe), große Grundstücke",
+    "verkehrsanbindung": "S-Bahn Iserbrook, Busanbindung",
+    "koordinaten": {"lat": 53.5763, "lng": 9.8089}
+  },
+  {
+    "name": "Lurup",
+    "bezirk": "Altona",
+    "einwohner": 36829,
+    "flaeche": 6.4,
+    "besonderheiten": "Großsiedlungen, viele Mehrfamilienhäuser, multikulturelles Viertel",
+    "gartentypen": "Mietergärten, Gemeinschaftsanlagen, Balkone",
+    "lokale_herausforderungen": "Intensivnutzung, Vandalismus, begrenzte Budgets",
+    "verkehrsanbindung": "Gute Busanbindung, kein direkter S-Bahn-Anschluss",
+    "koordinaten": {"lat": 53.5877, "lng": 9.8865}
+  },
+  {
+    "name": "Nienstedten",
+    "bezirk": "Altona",
+    "einwohner": 7238,
+    "flaeche": 4.5,
+    "besonderheiten": "Elbchaussee, Hirschpark, exklusive Wohnlage",
+    "gartentypen": "Parkähnliche Privatgärten, historische Gärten, Elbgrundstücke",
+    "lokale_herausforderungen": "Denkmalschutz, alte Parkbäume, Elbhochwasser",
+    "verkehrsanbindung": "Busanbindung entlang Elbchaussee",
+    "koordinaten": {"lat": 53.5540, "lng": 9.8439}
+  },
+  {
+    "name": "Osdorf",
+    "bezirk": "Altona",
+    "einwohner": 26731,
+    "flaeche": 7.3,
+    "besonderheiten": "Born Center, Hochhaussiedlung, aber auch Einfamilienhausgebiete",
+    "gartentypen": "Vielfältig von Mietergärten bis große Privatgärten",
+    "lokale_herausforderungen": "Soziale Unterschiede, verschiedene Ansprüche",
+    "verkehrsanbindung": "S-Bahn Osdorfer Born (geplant), gute Busanbindung",
+    "koordinaten": {"lat": 53.5872, "lng": 9.8508}
+  },
+  {
+    "name": "Othmarschen",
+    "bezirk": "Altona",
+    "einwohner": 16172,
+    "flaeche": 6.0,
+    "besonderheiten": "Jenischpark, gehobene Wohnlage, viele Villen",
+    "gartentypen": "Große Villengärten, alte Parkgrundstücke, Rhododendrongärten",
+    "lokale_herausforderungen": "Anspruchsvolle Gestaltung, historische Gärten, Parkpflege",
+    "verkehrsanbindung": "S-Bahn Othmarschen und Klein Flottbek",
+    "koordinaten": {"lat": 53.5549, "lng": 9.8873}
+  },
+  {
+    "name": "Ottensen",
+    "bezirk": "Altona",
+    "einwohner": 35536,
+    "flaeche": 2.8,
+    "besonderheiten": "Szeneviertel, dichte Bebauung, kreatives Milieu",
+    "gartentypen": "Hinterhöfe, Urban Gardening, Dachterrassen, Guerilla Gardening",
+    "lokale_herausforderungen": "Sehr wenig Platz, Schatten, kreative Lösungen gefragt",
+    "verkehrsanbindung": "S-Bahn Altona, sehr gute Busanbindung",
+    "koordinaten": {"lat": 53.5518, "lng": 9.9260}
+  },
+  {
+    "name": "Rissen",
+    "bezirk": "Altona",
+    "einwohner": 15678,
+    "flaeche": 16.8,
+    "besonderheiten": "Größter Stadtteil Altonas, ländlich, Wittenbergener Heide",
+    "gartentypen": "Große Grundstücke, Landschaftsgärten, naturnahe Anlagen",
+    "lokale_herausforderungen": "Wildtiere, Sandboden, große Flächen, Wind",
+    "verkehrsanbindung": "S-Bahn Rissen, Busanbindung",
+    "koordinaten": {"lat": 53.5865, "lng": 9.7567}
+  },
+  {
+    "name": "Sternschanze",
+    "bezirk": "Altona",
+    "einwohner": 8265,
+    "flaeche": 0.4,
+    "besonderheiten": "Kleinster Stadtteil Hamburgs, Szeneviertel, Schanzenpark",
+    "gartentypen": "Balkone, Gemeinschaftsgärten, Urban Gardening",
+    "lokale_herausforderungen": "Extrem wenig Platz, hohe Nutzungsintensität",
+    "verkehrsanbindung": "S-Bahn/U-Bahn Sternschanze, sehr zentral",
+    "koordinaten": {"lat": 53.5643, "lng": 9.9635}
+  },
+  {
+    "name": "Sülldorf",
+    "bezirk": "Altona",
+    "einwohner": 9535,
+    "flaeche": 5.9,
+    "besonderheiten": "Ländlicher Charakter, alte Bauernhöfe, Reiterhöfe",
+    "gartentypen": "Bauerngärten, große Nutzgärten, Pferdekoppeln",
+    "lokale_herausforderungen": "Ländliche Struktur, große Flächen, Naturschutz",
+    "verkehrsanbindung": "S-Bahn Sülldorf, periphere Lage",
+    "koordinaten": {"lat": 53.5807, "lng": 9.7970}
+  },
+  {
+    "name": "Bergedorf",
+    "bezirk": "Bergedorf",
+    "einwohner": 36071,
+    "flaeche": 11.1,
+    "besonderheiten": "Historische Altstadt, Schloss Bergedorf, Villenviertel",
+    "gartentypen": "Vielfältig von historischen Gärten bis Neubaugebiete",
+    "lokale_herausforderungen": "Unterschiedliche Bodentypen, Bille-Nähe",
+    "verkehrsanbindung": "S-Bahn Bergedorf, Regionalbahnhof",
+    "koordinaten": {"lat": 53.4889, "lng": 10.2089}
+  },
+  {
+    "name": "Allermöhe",
+    "bezirk": "Bergedorf",
+    "einwohner": 1436,
+    "flaeche": 29.2,
+    "besonderheiten": "Neu-Allermöhe, moderne Stadtentwicklung, viel Grün",
+    "gartentypen": "Moderne Gärten, Gemeinschaftsanlagen, ökologische Konzepte",
+    "lokale_herausforderungen": "Neubaugebiet, junge Gärten, Moorböden",
+    "verkehrsanbindung": "S-Bahn Allermöhe und Nettelnburg",
+    "koordinaten": {"lat": 53.4882, "lng": 10.1569}
+  },
+  {
+    "name": "Eimsbüttel",
+    "bezirk": "Eimsbüttel",
+    "einwohner": 58738,
+    "flaeche": 3.2,
+    "besonderheiten": "Dicht besiedelt, urbanes Flair, viele Altbauten",
+    "gartentypen": "Hinterhöfe, kleine Vorgärten, Balkone, Dachterrassen",
+    "lokale_herausforderungen": "Platzmangel, Schatten, intensive Nutzung",
+    "verkehrsanbindung": "U-Bahn Osterstraße, sehr gute Anbindung",
+    "koordinaten": {"lat": 53.5748, "lng": 9.9582}
+  },
+  {
+    "name": "Eidelstedt",
+    "bezirk": "Eimsbüttel",
+    "einwohner": 33179,
+    "flaeche": 8.6,
+    "besonderheiten": "Eidelstedt Center, Mix aus Alt und Neu, viele Grünflächen",
+    "gartentypen": "Schrebergärten, Mietergärten, Einfamilienhausgärten",
+    "lokale_herausforderungen": "Unterschiedliche Gartentypen, soziale Vielfalt",
+    "verkehrsanbindung": "U-Bahn/AKN Eidelstedt, gute Anbindung",
+    "koordinaten": {"lat": 53.6067, "lng": 9.9069}
+  },
+  {
+    "name": "Harvestehude",
+    "bezirk": "Eimsbüttel",
+    "einwohner": 18931,
+    "flaeche": 2.1,
+    "besonderheiten": "Nobeladresse, Außenalster, prachtvolle Altbauten",
+    "gartentypen": "Villengärten, Dachterrassen, kleine Stadtgärten",
+    "lokale_herausforderungen": "Hohe Ansprüche, Denkmalschutz, wenig Platz",
+    "verkehrsanbindung": "U-Bahn Hallerstraße, zentrale Lage",
+    "koordinaten": {"lat": 53.5786, "lng": 9.9858}
+  },
+  {
+    "name": "Hoheluft-West",
+    "bezirk": "Eimsbüttel",
+    "einwohner": 13414,
+    "flaeche": 0.7,
+    "besonderheiten": "Kleiner Stadtteil, dichte Bebauung, urbanes Wohnen",
+    "gartentypen": "Balkone, kleine Hinterhöfe, Dachgärten",
+    "lokale_herausforderungen": "Extreme Platznot, kreative Lösungen erforderlich",
+    "verkehrsanbindung": "U-Bahn Osterstraße/Hoheluftbrücke",
+    "koordinaten": {"lat": 53.5816, "lng": 9.9694}
+  }
+] 

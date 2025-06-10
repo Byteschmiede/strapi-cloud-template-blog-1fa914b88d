@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_faq_items",
+  "info": {
+    "displayName": "FAQ Item",
+    "description": "Einzelne Frage und Antwort",
+    "icon": "question"
+  },
+  "options": {},
+  "attributes": {
+    "frage": {
+      "type": "string",
+      "required": true,
+      "description": "Die Frage"
+    },
+    "antwort": {
+      "type": "text",
+      "required": true,
+      "description": "Die ausführliche Antwort"
+    }
+  }
+} 

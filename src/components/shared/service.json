@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_services",
+  "info": {
+    "displayName": "Service",
+    "description": "Service item with features"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "icon": {
+      "type": "string",
+      "description": "Icon name (e.g., CheckCircle, Clock)"
+    },
+    "features": {
+      "type": "json",
+      "description": "Array of feature strings"
+    }
+  }
+} 

@@ -1,0 +1,84 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stadtteile",
+  "info": {
+    "singularName": "stadtteil",
+    "pluralName": "stadtteile",
+    "displayName": "Stadtteil",
+    "description": "Hamburger Stadtteile mit lokalen Informationen"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "description": "Name des Stadtteils (z.B. Altona-Altstadt)"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "bezirk": {
+      "type": "enumeration",
+      "enum": [
+        "Altona",
+        "Bergedorf",
+        "Eimsbüttel",
+        "Hamburg-Mitte",
+        "Hamburg-Nord",
+        "Harburg",
+        "Wandsbek"
+      ],
+      "required": true
+    },
+    "einwohner": {
+      "type": "integer",
+      "description": "Einwohnerzahl des Stadtteils"
+    },
+    "flaeche": {
+      "type": "decimal",
+      "description": "Fläche in km²"
+    },
+    "besonderheiten": {
+      "type": "text",
+      "description": "Besondere Merkmale des Stadtteils"
+    },
+    "gartentypen": {
+      "type": "text",
+      "description": "Typische Gartenarten im Stadtteil (z.B. Reihenhausgärten, Villengärten)"
+    },
+    "lokale_herausforderungen": {
+      "type": "text",
+      "description": "Spezielle Herausforderungen für Gartenarbeit (z.B. Hanglage, sandiger Boden)"
+    },
+    "verkehrsanbindung": {
+      "type": "text",
+      "description": "Erreichbarkeit und Verkehrsanbindung"
+    },
+    "koordinaten": {
+      "type": "json",
+      "description": "GPS Koordinaten {lat, lng}"
+    },
+    "nachbar_stadtteile": {
+      "type": "json",
+      "description": "Array der angrenzenden Stadtteile"
+    },
+    "contents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::content.content",
+      "mappedBy": "stadtteil"
+    },
+    "referenzprojekte": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::referenz.referenz",
+      "mappedBy": "stadtteil"
+    }
+  }
+} 

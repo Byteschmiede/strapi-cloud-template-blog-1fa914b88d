@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_shared_benefits",
+  "info": {
+    "displayName": "Benefit",
+    "description": "Vorteil oder USP",
+    "icon": "star"
+  },
+  "options": {},
+  "attributes": {
+    "titel": {
+      "type": "string",
+      "required": true,
+      "description": "Kurzer, prägnanter Titel"
+    },
+    "beschreibung": {
+      "type": "text",
+      "required": true,
+      "description": "Ausführliche Beschreibung des Vorteils"
+    },
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "Award",
+        "Users",
+        "Star",
+        "Shield",
+        "Clock",
+        "CheckCircle",
+        "Zap",
+        "Heart",
+        "ThumbsUp",
+        "TrendingUp"
+      ],
+      "default": "CheckCircle",
+      "description": "Lucide Icon Name"
+    },
+    "highlight": {
+      "type": "boolean",
+      "default": false,
+      "description": "Als besonders wichtig hervorheben?"
+    }
+  }
+} 

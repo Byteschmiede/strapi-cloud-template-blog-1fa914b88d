@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_shared_testimonials",
+  "info": {
+    "displayName": "Testimonial",
+    "description": "Kundenbewertung",
+    "icon": "message-circle"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text",
+      "required": true,
+      "description": "Bewertungstext"
+    },
+    "autor": {
+      "type": "string",
+      "required": true,
+      "description": "Name des Kunden"
+    },
+    "rolle": {
+      "type": "string",
+      "description": "Position/Rolle (z.B. Hausbesitzer in Blankenese)"
+    },
+    "bewertung": {
+      "type": "integer",
+      "min": 1,
+      "max": 5,
+      "default": 5,
+      "description": "Sterne-Bewertung"
+    },
+    "datum": {
+      "type": "date",
+      "description": "Datum der Bewertung"
+    },
+    "verifiziert": {
+      "type": "boolean",
+      "default": true,
+      "description": "Verifizierte Bewertung?"
+    },
+    "projekt_typ": {
+      "type": "string",
+      "description": "Art des Projekts (z.B. Gartengestaltung)"
+    }
+  }
+} 

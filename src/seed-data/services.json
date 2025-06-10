@@ -1,0 +1,201 @@
+[
+  {
+    "name": "Gartenpflege",
+    "kurzbeschreibung": "Professionelle Pflege für dauerhaft schöne Gärten - von Rasenpflege bis Beetpflege",
+    "beschreibung": "<p>Unser Gartenpflege-Service umfasst alle regelmäßigen Arbeiten, die Ihr Garten benötigt. Von der wöchentlichen Rasenpflege über die saisonale Beetpflege bis hin zum fachgerechten Gehölzschnitt.</p><p>Wir erstellen individuelle Pflegepläne, die auf Ihren Garten und Ihre Wünsche abgestimmt sind.</p>",
+    "keywords": ["gartenpflege", "rasenpflege", "beetpflege", "gartenpflege hamburg", "gartenservice"],
+    "basis_preis": "45-65€/Stunde",
+    "icon": "Flower2",
+    "leistungen": [
+      "Rasenmähen und Rasenpflege",
+      "Beetpflege und Unkrautentfernung", 
+      "Heckenschnitt und Formschnitt",
+      "Laubentfernung",
+      "Düngung und Bewässerung",
+      "Wintervorbereitung"
+    ],
+    "saison": "ganzjährig",
+    "prioritaet": 10,
+    "seo_titel_template": "{service} {stadtteil} - Professioneller Gartenservice",
+    "seo_beschreibung_template": "Professionelle {service} in {stadtteil} Hamburg ✓ Regelmäßige Pflege ✓ Faire Preise ✓ Meisterbetrieb ✓ Jetzt anfragen!"
+  },
+  {
+    "name": "Heckenschnitt",
+    "kurzbeschreibung": "Fachgerechter Heckenschnitt für gesunde und formschöne Hecken",
+    "beschreibung": "<p>Hecken sind wichtige Gestaltungselemente und benötigen regelmäßige Pflege. Wir schneiden Ihre Hecken fachgerecht - ob Formschnitt, Verjüngungsschnitt oder regelmäßiger Pflegeschnitt.</p>",
+    "keywords": ["heckenschnitt", "hecke schneiden", "formschnitt", "heckenpflege"],
+    "basis_preis": "40-60€/Stunde",
+    "icon": "Scissors",
+    "leistungen": [
+      "Formschnitt für alle Heckenarten",
+      "Verjüngungsschnitt",
+      "Trapezschnitt für optimale Belichtung",
+      "Schnittgutentsorgung",
+      "Spezialpflege für Formgehölze"
+    ],
+    "saison": "frühjahr-herbst",
+    "prioritaet": 9,
+    "seo_titel_template": "{service} {stadtteil} Hamburg - Professionell & Günstig",
+    "seo_beschreibung_template": "{service} in {stadtteil} vom Fachbetrieb ✓ Alle Heckenarten ✓ Saubere Arbeit ✓ Faire Preise ✓ Termin vereinbaren!"
+  },
+  {
+    "name": "Gartengestaltung",
+    "kurzbeschreibung": "Kreative Gartengestaltung - von der Planung bis zur Umsetzung",
+    "beschreibung": "<p>Wir gestalten Ihren Traumgarten! Von der ersten Idee über die detaillierte Planung bis zur kompletten Umsetzung. Moderne oder klassische Gärten, Nutzgärten oder reine Ziergärten - wir realisieren Ihre Wünsche.</p>",
+    "keywords": ["gartengestaltung", "gartenplanung", "gartendesign", "gartenarchitektur", "gartenbau"],
+    "basis_preis": "ab 50€/qm",
+    "icon": "Trees",
+    "leistungen": [
+      "Individuelle Gartenplanung",
+      "3D-Visualisierung",
+      "Pflanzplanung und -auswahl",
+      "Wegebau und Terrassen",
+      "Wasseranlagen",
+      "Beleuchtungskonzepte"
+    ],
+    "saison": "ganzjährig",
+    "prioritaet": 10,
+    "seo_titel_template": "{service} {stadtteil} - Ihr Traumgarten vom Profi",
+    "seo_beschreibung_template": "Professionelle {service} in {stadtteil} Hamburg ✓ Individuelle Planung ✓ Komplette Umsetzung ✓ Meisterbetrieb ✓ Beratung anfordern!"
+  },
+  {
+    "name": "Baumpflege",
+    "kurzbeschreibung": "Professionelle Baumpflege für gesunde und sichere Bäume",
+    "beschreibung": "<p>Bäume benötigen fachgerechte Pflege für ein langes, gesundes Leben. Unsere zertifizierten Baumpfleger führen alle Arbeiten von der Kronenpflege bis zur Fällung durch - immer unter Beachtung der Baumschutzverordnung.</p>",
+    "keywords": ["baumpflege", "baumschnitt", "baumfällung", "kronenpflege", "baumsanierung"],
+    "basis_preis": "60-120€/Stunde",
+    "icon": "Trees",
+    "leistungen": [
+      "Kronenpflege und -schnitt",
+      "Totholzentfernung",
+      "Baumsanierung",
+      "Fällungen mit Genehmigung",
+      "Sturmschadenbeseitigung",
+      "Baumgutachten"
+    ],
+    "saison": "ganzjährig",
+    "prioritaet": 8,
+    "seo_titel_template": "{service} {stadtteil} - Zertifizierte Baumpfleger",
+    "seo_beschreibung_template": "Professionelle {service} in {stadtteil} Hamburg ✓ Zertifizierte Baumpfleger ✓ Verkehrssicherheit ✓ Alle Baumarten ✓ Angebot anfordern!"
+  },
+  {
+    "name": "Rasenpflege",
+    "kurzbeschreibung": "Perfekter Rasen durch professionelle Pflege und Behandlung",
+    "beschreibung": "<p>Ein schöner Rasen ist das Herzstück vieler Gärten. Wir sorgen mit professioneller Rasenpflege für dichten, grünen Rasen - von der Neuanlage über die Regeneration bis zur regelmäßigen Pflege.</p>",
+    "keywords": ["rasenpflege", "rasen mähen", "vertikutieren", "rasen düngen", "rollrasen"],
+    "basis_preis": "35-50€/Stunde",
+    "icon": "Leaf",
+    "leistungen": [
+      "Regelmäßiges Mähen",
+      "Vertikutieren",
+      "Düngen und Kalken",
+      "Nachsaat",
+      "Rollrasenverlegung",
+      "Rasenregeneration"
+    ],
+    "saison": "frühjahr-herbst",
+    "prioritaet": 9,
+    "seo_titel_template": "{service} {stadtteil} - Für perfekten Rasen",
+    "seo_beschreibung_template": "{service} in {stadtteil} vom Profi ✓ Mähen, Düngen, Vertikutieren ✓ Gesunder Rasen ✓ Faire Preise ✓ Jetzt Termin sichern!"
+  },
+  {
+    "name": "Winterdienst",
+    "kurzbeschreibung": "Zuverlässiger Winterdienst für sichere Wege und Zufahrten",
+    "beschreibung": "<p>Sicherheit im Winter! Unser Winterdienst sorgt für schnee- und eisfreie Wege, Einfahrten und Parkplätze. Zuverlässig, pünktlich und gemäß der Hamburger Straßenreinigungsverordnung.</p>",
+    "keywords": ["winterdienst", "schneeräumung", "streudienst", "räumpflicht", "winterdienst hamburg"],
+    "basis_preis": "ab 50€/Einsatz",
+    "icon": "Snowflake",
+    "leistungen": [
+      "Schneeräumung",
+      "Glättebekämpfung", 
+      "24/7 Bereitschaft",
+      "Streugutlagerung",
+      "Dokumentation",
+      "Vertragsservice"
+    ],
+    "saison": "winter",
+    "prioritaet": 7,
+    "seo_titel_template": "{service} {stadtteil} - 24/7 Räumdienst",
+    "seo_beschreibung_template": "Zuverlässiger {service} in {stadtteil} Hamburg ✓ 24/7 Bereitschaft ✓ Schneeräumung & Streudienst ✓ Faire Preise ✓ Vertrag abschließen!"
+  },
+  {
+    "name": "Gartenbau",
+    "kurzbeschreibung": "Garten- und Landschaftsbau für Neuanlagen und Umgestaltungen",
+    "beschreibung": "<p>Vom kleinen Vorgarten bis zum Parkgrundstück - wir realisieren Gartenbau-Projekte jeder Größe. Mit Erfahrung, Kreativität und handwerklichem Können schaffen wir Gärten, die begeistern.</p>",
+    "keywords": ["gartenbau", "landschaftsbau", "gartenanlage", "garten anlegen", "garten und landschaftsbau"],
+    "basis_preis": "nach Projekt",
+    "icon": "Shovel",
+    "leistungen": [
+      "Erdarbeiten",
+      "Wegebau",
+      "Terrassenbau",
+      "Mauerbau",
+      "Teichbau",
+      "Bepflanzungen"
+    ],
+    "saison": "frühjahr-herbst",
+    "prioritaet": 10,
+    "seo_titel_template": "{service} {stadtteil} - Meisterbetrieb",
+    "seo_beschreibung_template": "Professioneller {service} in {stadtteil} Hamburg ✓ Neuanlage & Umgestaltung ✓ Meisterqualität ✓ Festpreisgarantie ✓ Projekt anfragen!"
+  },
+  {
+    "name": "Teichpflege",
+    "kurzbeschreibung": "Professionelle Pflege für klare und gesunde Gartenteiche",
+    "beschreibung": "<p>Ein Gartenteich benötigt regelmäßige Pflege für klares Wasser und gesunde Bewohner. Wir bieten professionelle Teichpflege von der Reinigung über die Wartung bis zur Sanierung.</p>",
+    "keywords": ["teichpflege", "teichreinigung", "teichservice", "teichsanierung", "gartenteich"],
+    "basis_preis": "50-80€/Stunde",
+    "icon": "Droplets",
+    "leistungen": [
+      "Teichreinigung",
+      "Filterreinigung",
+      "Algenkontrolle",
+      "Wasserpflege",
+      "Teichsanierung",
+      "Überwinterung"
+    ],
+    "saison": "frühjahr-herbst",
+    "prioritaet": 6,
+    "seo_titel_template": "{service} {stadtteil} - Kristallklares Wasser",
+    "seo_beschreibung_template": "{service} in {stadtteil} Hamburg ✓ Reinigung & Wartung ✓ Klares Wasser ✓ Gesunde Teiche ✓ Beratung vereinbaren!"
+  },
+  {
+    "name": "Dachbegrünung",
+    "kurzbeschreibung": "Ökologische Dachbegrünung für Klima und Optik",
+    "beschreibung": "<p>Dachbegrünung verbessert das Stadtklima, spart Energie und schafft neue Lebensräume. Wir planen und realisieren extensive und intensive Dachbegrünungen für Privat und Gewerbe.</p>",
+    "keywords": ["dachbegrünung", "gründach", "dachgarten", "extensive begrünung", "intensive begrünung"],
+    "basis_preis": "ab 60€/qm",
+    "icon": "Home",
+    "leistungen": [
+      "Dachprüfung",
+      "Abdichtung",
+      "Substrataufbau",
+      "Bepflanzung",
+      "Bewässerung",
+      "Wartung"
+    ],
+    "saison": "frühjahr-sommer",
+    "prioritaet": 5,
+    "seo_titel_template": "{service} {stadtteil} - Grüne Dächer vom Profi",
+    "seo_beschreibung_template": "Professionelle {service} in {stadtteil} Hamburg ✓ Extensive & intensive Begrünung ✓ Förderung möglich ✓ Beratung anfordern!"
+  },
+  {
+    "name": "Zaunbau",
+    "kurzbeschreibung": "Individuelle Zäune und Sichtschutzlösungen",
+    "beschreibung": "<p>Zäune geben Sicherheit und Privatsphäre. Wir bauen individuelle Zaunanlagen - vom klassischen Holzzaun über moderne Metallzäune bis zu lebenden Hecken als natürlichem Sichtschutz.</p>",
+    "keywords": ["zaunbau", "sichtschutz", "gartenzaun", "zaun bauen", "sichtschutzzaun"],
+    "basis_preis": "ab 80€/lfd. Meter",
+    "icon": "Fence",
+    "leistungen": [
+      "Holzzäune",
+      "Metallzäune",
+      "Sichtschutzelemente",
+      "Toranlagen",
+      "Gabionen",
+      "Heckenpflanzung"
+    ],
+    "saison": "ganzjährig",
+    "prioritaet": 7,
+    "seo_titel_template": "{service} {stadtteil} - Individuelle Lösungen",
+    "seo_beschreibung_template": "{service} in {stadtteil} Hamburg ✓ Holz, Metall & mehr ✓ Sichtschutz ✓ Montage inkl. ✓ Angebot einholen!"
+  }
+] 

@@ -1,0 +1,133 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contents",
+  "info": {
+    "singularName": "content",
+    "pluralName": "contents",
+    "displayName": "Content",
+    "description": "SEO-optimierte Inhalte für Service-Stadtteil Kombinationen"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titel": {
+      "type": "string",
+      "required": true,
+      "description": "Haupttitel der Seite"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "titel",
+      "required": true,
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "content": {
+      "type": "richtext",
+      "required": true,
+      "description": "Hauptinhalt mit HTML-Formatierung"
+    },
+    "excerpt": {
+      "type": "text",
+      "maxLength": 300,
+      "description": "Kurzer Auszug für Übersichten"
+    },
+    "meta_title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 60,
+      "description": "SEO Meta Title (max 60 Zeichen)"
+    },
+    "meta_description": {
+      "type": "string",
+      "required": true,
+      "maxLength": 160,
+      "description": "SEO Meta Description (max 160 Zeichen)"
+    },
+    "keywords": {
+      "type": "json",
+      "required": true,
+      "description": "Array von Keywords"
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.faq-item",
+      "required": false,
+      "min": 3,
+      "max": 10
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "draft",
+        "pending_review",
+        "published",
+        "archived"
+      ],
+      "default": "draft",
+      "required": true
+    },
+    "content_score": {
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "description": "Qualitätsscore des Contents"
+    },
+    "word_count": {
+      "type": "integer",
+      "default": 0,
+      "description": "Anzahl der Wörter im Content"
+    },
+    "keyword_density": {
+      "type": "decimal",
+      "description": "Keyword-Dichte in Prozent"
+    },
+    "stadtteil": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::stadtteil.stadtteil",
+      "inversedBy": "contents",
+      "required": true
+    },
+    "service": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::service.service",
+      "inversedBy": "contents",
+      "required": true
+    },
+    "schema_markup": {
+      "type": "json",
+      "description": "JSON-LD Schema.org Markup"
+    },
+    "canonical_url": {
+      "type": "string",
+      "description": "Kanonische URL"
+    },
+    "interne_notizen": {
+      "type": "text",
+      "private": true,
+      "description": "Interne Notizen (nicht öffentlich)"
+    },
+    "last_updated_by_ai": {
+      "type": "datetime",
+      "description": "Letztes AI Update"
+    },
+    "manual_edits": {
+      "type": "boolean",
+      "default": false,
+      "description": "Wurde manuell bearbeitet?"
+    },
+    "cta_titel": {
+      "type": "string",
+      "default": "Jetzt unverbindlich anfragen!"
+    },
+    "cta_text": {
+      "type": "text",
+      "default": "Kontaktieren Sie uns für eine kostenlose Beratung"
+    }
+  }
+} 
