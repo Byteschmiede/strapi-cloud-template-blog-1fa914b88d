@@ -89,8 +89,7 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::stadtteil.stadtteil",
-      "inversedBy": "contents",
-      "required": true
+      "inversedBy": "contents"
     },
     "service": {
       "type": "relation",
@@ -130,4 +129,4 @@
       "default": "Kontaktieren Sie uns für eine kostenlose Beratung"
     }
   }
-} 
+}

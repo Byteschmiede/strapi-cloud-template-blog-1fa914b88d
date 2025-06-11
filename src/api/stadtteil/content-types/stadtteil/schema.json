@@ -8,15 +8,14 @@
     "description": "Hamburger Stadtteile mit lokalen Informationen"
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
     "name": {
       "type": "string",
       "required": true,
-      "unique": true,
-      "description": "Name des Stadtteils (z.B. Altona-Altstadt)"
+      "unique": true
     },
     "slug": {
       "type": "uid",
@@ -25,6 +24,7 @@
     },
     "bezirk": {
       "type": "enumeration",
+      "required": true,
       "enum": [
         "Altona",
         "Bergedorf",
@@ -33,40 +33,31 @@
         "Hamburg-Nord",
         "Harburg",
         "Wandsbek"
-      ],
-      "required": true
+      ]
     },
     "einwohner": {
-      "type": "integer",
-      "description": "Einwohnerzahl des Stadtteils"
+      "type": "integer"
     },
     "flaeche": {
-      "type": "decimal",
-      "description": "Fläche in km²"
+      "type": "decimal"
     },
     "besonderheiten": {
-      "type": "text",
-      "description": "Besondere Merkmale des Stadtteils"
+      "type": "text"
     },
     "gartentypen": {
-      "type": "text",
-      "description": "Typische Gartenarten im Stadtteil (z.B. Reihenhausgärten, Villengärten)"
+      "type": "text"
     },
     "lokale_herausforderungen": {
-      "type": "text",
-      "description": "Spezielle Herausforderungen für Gartenarbeit (z.B. Hanglage, sandiger Boden)"
+      "type": "text"
     },
     "verkehrsanbindung": {
-      "type": "text",
-      "description": "Erreichbarkeit und Verkehrsanbindung"
+      "type": "text"
     },
     "koordinaten": {
-      "type": "json",
-      "description": "GPS Koordinaten {lat, lng}"
+      "type": "json"
     },
     "nachbar_stadtteile": {
-      "type": "json",
-      "description": "Array der angrenzenden Stadtteile"
+      "type": "json"
     },
     "contents": {
       "type": "relation",
@@ -79,6 +70,10 @@
       "relation": "oneToMany",
       "target": "api::referenz.referenz",
       "mappedBy": "stadtteil"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
     }
   }
-} 
+}

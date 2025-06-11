@@ -53,13 +53,17 @@
       "type": "media",
       "multiple": true,
       "required": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "nachher_bilder": {
       "type": "media",
       "multiple": true,
       "required": true,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "testimonial": {
       "type": "text",
@@ -103,4 +107,4 @@
       "description": "Sortierreihenfolge"
     }
   }
-} 
+}

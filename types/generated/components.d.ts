@@ -1,75 +1,94 @@
-import type { Struct, Schema } from '@strapi/strapi';
+import type { Schema, Struct } from '@strapi/strapi';
 
-export interface SharedSlider extends Struct.ComponentSchema {
-  collectionName: 'components_shared_sliders';
+export interface SharedBenefit extends Struct.ComponentSchema {
+  collectionName: 'components_shared_benefits';
   info: {
-    displayName: 'Slider';
-    icon: 'address-book';
-    description: '';
+    description: 'Vorteil oder USP';
+    displayName: 'Benefit';
+    icon: 'star';
   };
   attributes: {
-    files: Schema.Attribute.Media<'images', true>;
+    beschreibung: Schema.Attribute.Text & Schema.Attribute.Required;
+    highlight: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    icon: Schema.Attribute.Enumeration<
+      [
+        'Award',
+        'Users',
+        'Star',
+        'Shield',
+        'Clock',
+        'CheckCircle',
+        'Zap',
+        'Heart',
+        'ThumbsUp',
+        'TrendingUp',
+      ]
+    > &
+      Schema.Attribute.DefaultTo<'CheckCircle'>;
+    titel: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
 
-export interface SharedSeo extends Struct.ComponentSchema {
-  collectionName: 'components_shared_seos';
+export interface SharedFaqItem extends Struct.ComponentSchema {
+  collectionName: 'components_shared_faq_items';
   info: {
-    name: 'Seo';
-    icon: 'allergies';
-    displayName: 'Seo';
-    description: '';
+    description: 'Einzelne Frage und Antwort';
+    displayName: 'FAQ Item';
+    icon: 'question';
   };
   attributes: {
-    metaTitle: Schema.Attribute.String & Schema.Attribute.Required;
-    metaDescription: Schema.Attribute.Text & Schema.Attribute.Required;
-    shareImage: Schema.Attribute.Media<'images'>;
+    antwort: Schema.Attribute.Text & Schema.Attribute.Required;
+    frage: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
 
-export interface SharedRichText extends Struct.ComponentSchema {
-  collectionName: 'components_shared_rich_texts';
+export interface SharedService extends Struct.ComponentSchema {
+  collectionName: 'components_shared_services';
   info: {
-    displayName: 'Rich text';
-    icon: 'align-justify';
-    description: '';
+    description: 'Service item with features';
+    displayName: 'Service';
   };
   attributes: {
-    body: Schema.Attribute.RichText;
+    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    features: Schema.Attribute.JSON;
+    icon: Schema.Attribute.String;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
 
-export interface SharedQuote extends Struct.ComponentSchema {
-  collectionName: 'components_shared_quotes';
+export interface SharedTestimonial extends Struct.ComponentSchema {
+  collectionName: 'components_shared_testimonials';
   info: {
-    displayName: 'Quote';
-    icon: 'indent';
+    description: 'Kundenbewertung';
+    displayName: 'Testimonial';
+    icon: 'message-circle';
   };
   attributes: {
-    title: Schema.Attribute.String;
-    body: Schema.Attribute.Text;
-  };
-}
-
-export interface SharedMedia extends Struct.ComponentSchema {
-  collectionName: 'components_shared_media';
-  info: {
-    displayName: 'Media';
-    icon: 'file-video';
-  };
-  attributes: {
-    file: Schema.Attribute.Media<'images' | 'files' | 'videos'>;
+    autor: Schema.Attribute.String & Schema.Attribute.Required;
+    bewertung: Schema.Attribute.Integer &
+      Schema.Attribute.SetMinMax<
+        {
+          max: 5;
+          min: 1;
+        },
+        number
+      > &
+      Schema.Attribute.DefaultTo<5>;
+    datum: Schema.Attribute.Date;
+    projekt_typ: Schema.Attribute.String;
+    rolle: Schema.Attribute.String;
+    text: Schema.Attribute.Text & Schema.Attribute.Required;
+    verifiziert: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
   };
 }
 
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
-      'shared.slider': SharedSlider;
-      'shared.seo': SharedSeo;
-      'shared.rich-text': SharedRichText;
-      'shared.quote': SharedQuote;
-      'shared.media': SharedMedia;
+      'shared.benefit': SharedBenefit;
+      'shared.faq-item': SharedFaqItem;
+      'shared.service': SharedService;
+      'shared.testimonial': SharedTestimonial;
     }
   }
 }
