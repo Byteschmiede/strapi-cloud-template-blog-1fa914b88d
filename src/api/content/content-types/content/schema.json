@@ -36,7 +36,7 @@
     "meta_title": {
       "type": "string",
       "required": true,
-      "maxLength": 60,
+      "maxLength": 80,
       "description": "SEO Meta Title (max 60 Zeichen)"
     },
     "meta_description": {
