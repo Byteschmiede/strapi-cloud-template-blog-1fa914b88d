@@ -1,6 +1,6 @@
 {
   "kind": "collectionType",
-  "collectionName": "gartenabo_submissions",
+  "collectionName": "gartenabo_submission",
   "info": {
     "singularName": "gartenabo-submission",
     "pluralName": "gartenabo-submissions",
