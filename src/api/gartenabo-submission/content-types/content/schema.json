@@ -1,0 +1,393 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gartenabo_submissions",
+  "info": {
+    "singularName": "gartenabo-submission",
+    "pluralName": "gartenabo-submissions",
+    "displayName": "Gartenabo Anfrage",
+    "description": "Anfragen für Garten-Abonnements mit vollständigen Kundeninformationen"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "content-manager": {
+      "visible": true
+    },
+    "content-type-builder": {
+      "visible": true
+    }
+  },
+  "attributes": {
+    "firstName": {
+      "type": "string",
+      "required": true,
+      "minLength": 2,
+      "maxLength": 100,
+      "configurable": false,
+      "pluginOptions": {
+        "content-manager": {
+          "visible": true,
+          "edit": {
+            "label": "Vorname",
+            "description": "Vorname des Kunden",
+            "placeholder": "Max",
+            "visible": true,
+            "editable": true
+          },
+          "list": {
+            "label": "Vorname",
+            "searchable": true,
+            "sortable": true
+          }
+        }
+      }
+    },
+    "lastName": {
+      "type": "string",
+      "required": true,
+      "minLength": 2,
+      "maxLength": 100,
+      "configurable": false,
+      "pluginOptions": {
+        "content-manager": {
+          "visible": true,
+          "edit": {
+            "label": "Nachname",
+            "description": "Nachname des Kunden",
+            "placeholder": "Mustermann",
+            "visible": true,
+            "editable": true
+          },
+          "list": {
+            "label": "Nachname",
+            "searchable": true,
+            "sortable": true
+          }
+        }
+      }
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": false,
+      "configurable": false,
+      "pluginOptions": {
+        "content-manager": {
+          "visible": true,
+          "edit": {
+            "label": "E-Mail",
+            "description": "E-Mail-Adresse des Kunden",
+            "placeholder": "max@beispiel.de",
+            "visible": true,
+            "editable": true
+          },
+          "list": {
+            "label": "E-Mail",
+            "searchable": true,
+            "sortable": true
+          }
+        }
+      }
+    },
+    "phone": {
+      "type": "string",
+      "required": true,
+      "minLength": 6,
+      "maxLength": 30,
+      "configurable": false,
+      "pluginOptions": {
+        "content-manager": {
+          "visible": true,
+          "edit": {
+            "label": "Telefon",
+            "description": "Telefonnummer des Kunden",
+            "placeholder": "+49 30 123456",
+            "visible": true,
+            "editable": true
+          },
+          "list": {
+            "label": "Telefon",
+            "searchable": true,
+            "sortable": false
+          }
+        }
+      }
+    },
+    "address": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "configurable": false,
+      "pluginOptions": {
+        "content-manager": {
+          "visible": true,
+          "edit": {
+            "label": "Adresse",
+            "description": "Straße und Hausnummer",
+            "placeholder": "Musterstraße 123",
+            "visible": true,
+            "editable": true
+          }
+        }
+      }
+    },
+    "postalCode": {
+      "type": "string",
+      "required": true,
+      "minLength": 4,
+      "maxLength": 10,
+      "configurable": false,
+      "pluginOptions": {
+        "content-manager": {
+          "visible": true,
+          "edit": {
+            "label": "PLZ",
+            "description": "Postleitzahl",
+            "placeholder": "12345",
+            "visible": true,
+            "editable": true
+          }
+        }
+      }
+    },
+    "city": {
+      "type": "string",
+      "required": true,
+      "minLength": 2,
+      "maxLength": 100,
+      "configurable": false,
+      "pluginOptions": {
+        "content-manager": {
+          "visible": true,
+          "edit": {
+            "label": "Stadt",
+            "description": "Stadt/Ort",
+            "placeholder": "Hamburg",
+            "visible": true,
+            "editable": true
+          },
+          "list": {
+            "label": "Stadt",
+            "searchable": true,
+            "sortable": true
+          }
+        }
+      }
+    },
+    "services": {
+      "type": "json",
+      "required": true,
+      "pluginOptions": {
+        "content-manager": {
+          "visible": true,
+          "edit": {
+            "label": "Ausgewählte Services",
+            "description": "Liste der ausgewählten Gartenservices mit Details",
+            "visible": true,
+            "editable": true
+          }
+        }
+      }
+    },
+    "additionalMessage": {
+      "type": "text",
+      "required": false,
+      "maxLength": 5000,
+      "pluginOptions": {
+        "content-manager": {
+          "visible": true,
+          "edit": {
+            "label": "Zusätzliche Nachricht",
+            "description": "Besondere Wünsche oder Anmerkungen des Kunden",
+            "placeholder": "Ihre besonderen Wünsche...",
+            "visible": true,
+            "editable": true
+          }
+        }
+      }
+    },
+    "sendPhotos": {
+      "type": "boolean",
+      "default": false,
+      "required": false,
+      "pluginOptions": {
+        "content-manager": {
+          "visible": true,
+          "edit": {
+            "label": "Fotos senden",
+            "description": "Kunde möchte Fotos des Gartens mitsenden",
+            "visible": true,
+            "editable": true
+          }
+        }
+      }
+    },
+    "monthlyPrice": {
+      "type": "decimal",
+      "required": true,
+      "min": 0,
+      "pluginOptions": {
+        "content-manager": {
+          "visible": true,
+          "edit": {
+            "label": "Monatspreis",
+            "description": "Berechneter Monatspreis in EUR",
+            "visible": true,
+            "editable": true
+          },
+          "list": {
+            "label": "Monatspreis €",
+            "searchable": false,
+            "sortable": true
+          }
+        }
+      }
+    },
+    "yearlyPrice": {
+      "type": "decimal",
+      "required": true,
+      "min": 0,
+      "pluginOptions": {
+        "content-manager": {
+          "visible": true,
+          "edit": {
+            "label": "Jahrespreis",
+            "description": "Berechneter Jahrespreis in EUR",
+            "visible": true,
+            "editable": true
+          }
+        }
+      }
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "new",
+        "contacted",
+        "offer_sent",
+        "in_negotiation",
+        "accepted",
+        "rejected",
+        "archived"
+      ],
+      "default": "new",
+      "required": true,
+      "pluginOptions": {
+        "content-manager": {
+          "visible": true,
+          "edit": {
+            "label": "Status",
+            "description": "Aktueller Bearbeitungsstatus",
+            "visible": true,
+            "editable": true
+          },
+          "list": {
+            "label": "Status",
+            "searchable": true,
+            "sortable": true
+          }
+        }
+      }
+    },
+    "internalNotes": {
+      "type": "richtext",
+      "private": true,
+      "pluginOptions": {
+        "content-manager": {
+          "visible": true,
+          "edit": {
+            "label": "Interne Notizen",
+            "description": "Notizen für interne Bearbeitung (nicht öffentlich sichtbar)",
+            "visible": true,
+            "editable": true
+          }
+        }
+      }
+    },
+    "submittedAt": {
+      "type": "datetime",
+      "required": true,
+      "pluginOptions": {
+        "content-manager": {
+          "visible": true,
+          "edit": {
+            "label": "Eingereicht am",
+            "description": "Zeitpunkt der Anfrage",
+            "visible": true,
+            "editable": false
+          },
+          "list": {
+            "label": "Datum",
+            "searchable": false,
+            "sortable": true
+          }
+        }
+      }
+    },
+    "totalYearlyHours": {
+      "type": "integer",
+      "required": false,
+      "min": 0,
+      "pluginOptions": {
+        "content-manager": {
+          "visible": true,
+          "edit": {
+            "label": "Jährliche Arbeitsstunden",
+            "description": "Geschätzte Arbeitsstunden pro Jahr",
+            "visible": true,
+            "editable": true
+          }
+        }
+      }
+    },
+    "assignedTo": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "admin::user",
+      "private": false,
+      "pluginOptions": {
+        "content-manager": {
+          "visible": true,
+          "edit": {
+            "label": "Zugewiesen an",
+            "description": "Mitarbeiter der diese Anfrage bearbeitet",
+            "visible": true,
+            "editable": true
+          }
+        }
+      }
+    },
+    "followUpDate": {
+      "type": "date",
+      "required": false,
+      "pluginOptions": {
+        "content-manager": {
+          "visible": true,
+          "edit": {
+            "label": "Wiedervorlage",
+            "description": "Datum für Wiedervorlage/Follow-up",
+            "visible": true,
+            "editable": true
+          }
+        }
+      }
+    },
+    "conversionSource": {
+      "type": "string",
+      "required": false,
+      "maxLength": 100,
+      "pluginOptions": {
+        "content-manager": {
+          "visible": true,
+          "edit": {
+            "label": "Herkunft",
+            "description": "Woher kam die Anfrage (z.B. Google Ads, Organic, etc.)",
+            "visible": true,
+            "editable": true
+          }
+        }
+      }
+    }
+  }
+} 
